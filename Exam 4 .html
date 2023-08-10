@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Registration</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+  <div class="bg-white p-8 rounded shadow-md w-full sm:w-96">
+    <h2 class="text-2xl font-semibold mb-4">Login/Register</h2>
+    <form>
+      <!-- Email input -->
+      <input class="w-full px-3 py-2 border rounded mb-3" type="email" placeholder="Email" required>
+      <!-- Password input -->
+      <input class="w-full px-3 py-2 border rounded mb-3" type="password" placeholder="Password" required>
+      <!-- Confirm Password input -->
+      <input class="w-full px-3 py-2 border rounded mb-3" type="password" placeholder="Confirm Password" required>
+      <!-- Gender options -->
+      <div class="flex mb-3">
+        <label class="flex items-center cursor-pointer">
+          <input type="radio" class="form-radio" name="gender" value="male">
+          <span class="ml-2">Male</span>
+        </label>
+        <label class="flex items-center ml-4 cursor-pointer">
+          <input type="radio" class="form-radio" name="gender" value="female">
+          <span class="ml-2">Female</span>
+        </label>
+        <label class="flex items-center ml-4 cursor-pointer">
+          <input type="radio" class="form-radio" name="gender" value="other">
+          <span class="ml-2">Other</span>
+        </label>
+      </div>
+      <!-- Country dropdown -->
+      <select class="w-full px-3 py-2 border rounded mb-3" name="country" required>
+        <option value="" disabled selected>Select your country</option>
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="au">Australia</option>
+        <option value="in">India</option>
+      </select>
+      <!-- Remember me checkbox -->
+      <label class="flex items-center mb-3 cursor-pointer">
+        <input type="checkbox" class="form-checkbox">
+        <span class="ml-2">Remember me</span>
+      </label>
+      <!-- Submit button -->
+      <button class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600" type="submit">Register</button>
+      <!-- Login link -->
+      <p class="mt-4 text-center text-sm">Already have an account? <a href="#" class="text-blue-500 hover:underline">Login here</a></p>
+      <!-- Additional lines -->
+      <p class="text-center text-gray-500 text-xs mt-6">
+        This is a sample login and registration form designed using Tailwind CSS. For educational purposes only.
+      </p>
+      <p class="text-center text-gray-500 text-xs">
+        © 2023 Your Company. All rights reserved.
+      </p>
+      <!-- Additional lines (100) -->
+      <p class="mt-4 text-center text-xs text-gray-600">
+        By registering, you agree to our <a href="#" class="text-blue-500 hover:underline">Terms of Service</a> and <a href="#" class="text-blue-500 hover:underline">Privacy Policy</a>.
+      </p>
+      <div class="mt-6">
+        <p class="text-center text-xs text-gray-400">For support, contact <a href="mailto:support@example.com" class="text-blue-500 hover:underline">support@example.com</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
